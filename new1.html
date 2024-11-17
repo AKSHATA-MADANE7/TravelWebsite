@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>new1</title>
+    <link rel="stylesheet" href="new1css.css">
+</head>
+<body>
+    <header class="top-nav">
+        <nav class="left-nav">
+            <ul>
+                <li><img src="train.svg" alt="Icon 1" width="24" height="24">Find Train<a href="#" target="_blank"><div class="rectangle-div"></div></li></a>
+                <li><img src="bed.svg" alt="Icon 2" width="24" height="24">Find Stays<a href="new.html" target="_blank"><div class="rectangle-div2"></div></li></a>
+            </ul>
+        </nav>
+        <div class="logo">
+            <img src="logo7.png" alt="Logo">
+        </div>
+        <nav class="right-nav">
+            <ul>
+                <li><a href="#"><img src="filledheart.svg" alt="Icon 3" width="24" height="24"></a><div class="rectangle-div3"></div>Favourites</li>
+                <li><a href="#"><img src="pro.jpg" alt="Icon 4" width="24" height="24" style="border-radius: 50px;"></a>John Doe</li>
+            </ul>
+        </nav>
+    </header>
+
+<div class="card-container">
+    <div class="overlapping-card">
+
+        <!-- updates start here -->
+        <form action="processform.php" method="POST">
+            
+   
+
+        <div class="lets-try-this">
+            <div class="form-group">
+                <fieldset><legend>Enter Destination</legend>
+                <input type="text" id="textbox" name="textbox" placeholder="Enter your destination here">
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <fieldset><legend>Check In</legend>
+                <input type="date" id="datepicker1" name="datepicker1" placeholder="dd-mm-yy">
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <fieldset><legend>Check Out</legend>
+                <input type="date" id="datepicker2" name="datepicker2" placeholder="dd-mm-yy">
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <fieldset><legend>Rooms & Guests</legend>
+                <select id="dropdown" name="roomsnguests" placeholder="Select room">
+                    <option value="Selectrooms">Select Room</option>
+                    <option value="1rooms">1 room</option>
+                    <option value="2rooms">2 rooms</option>
+                    <option value="3rooms00000">3 rooms</option>
+                </select>
+                </fieldset>
+            </div>
+        
+        <div class="button-row" style="text-align: left;">
+           <input type="submit" class="btn-secondary" value="GO">
+        </div>
+        </div>
+    
+       <!-- updates end here -->
+    </div>
+</div>
+</form>
+
+<div class="container">
+    <div class="filter">
+        <h3>Filters</h3>
+    <div class="form-group1">
+        <div class="price-adjustment">
+            <label for="price-slider">Price Adjustment:</label>
+            <input type="range" id="price-slider" min="Rs 1500" max="Rs 5000 " step="5">
+            <div class="value">
+            <p id="min-value">Rs 1500</p>
+            <p id="max-value">Rs 5000</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="form-group1"> 
+        <div class="rating-buttons">
+            <label>Rating:</label>
+            <div class="rating-buttons-container">
+            <input type="button" name="rating" value="5">
+            <input type="button" name="rating" value="4">
+            <input type="button" name="rating" value="3">
+            <input type="button" name="rating" value="2">
+            <input type="button" name="rating" value="1">
+            </div>
+       </div> 
+    </div> 
+    <hr>  
+    <div class="form-group1">
+        <div class="freebies">
+            <label>Freebies:</label>
+            <div class="freebies-container">
+                <input type="checkbox" name="freebies" value="wifi">
+                <label for="freebies"><span style="font-weight: normal;">Free Wifi</span></label>
+                <br>
+                <input type="checkbox" name="freebies" value="breakfast">
+                <label for="freebies"><span style="font-weight: normal;">Free Breakfast</span></label>
+                <br>
+                <input type="checkbox" name="freebies" value="parking">
+                <label for="freebies"><span style="font-weight: normal;">Free Parking</span></label>
+                <br>
+                <input type="checkbox" name="freebies" value="parking">
+                <label for="freebies"><span style="font-weight: normal;">Free Airport Shuttle</span></label>
+                <br>
+                <input type="checkbox" name="freebies" value="parking">
+                <label for="freebies"><span style="font-weight: normal;">Free Cancellation</span></label>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="form-group1">    
+        <div class="amenities">
+            <label>Amenities:</label>
+            <div class="amenities-container">
+                <input type="checkbox" name="amenities" value="pool">
+                <label for="amenities"><span style="font-weight: normal;">24hr Front Desk</span></label>
+                <br>
+                <input type="checkbox" name="amenities" value="gym">
+                <label for="amenities"><span style="font-weight: normal;">Air-Conditioned</span></label>
+                <br>
+                <input type="checkbox" name="amenities" value="spa">
+                <label for="amenities"><span style="font-weight: normal;">Fitness</span></label>
+                <br>
+                <input type="checkbox" name="amenities" value="spa">
+                <label for="amenities"><span style="font-weight: normal;">Pool</span></label>
+                <p><span style="color:#FF8682; font-weight: bold;">+24 more</span></p>
+            </div>
+        </div>
+    </div>
+<div class="vertical"></div>
+</div>
+    <div class="cards">
+    <div class="card-row">
+        <div class="card2">
+            <div class="card-content2">
+                <h2 class="card-title2">Hotels</h2>
+                <p class="card-body2">
+                    325 places
+                </p>
+                <div class="rectangle-div4"></div>
+            </div>
+        </div>
+        <div class="card2">
+            <div class="card-content2">
+                <h2 class="card-title2">Resorts</h2>
+                <p class="card-body2">
+                    225 places
+                </p>
+                <div class="rectangle-div5"></div>
+            </div>
+        </div>
+        <div class="card2">
+            <div class="card-content2">
+                <h2 class="card-title2">Motels</h2>
+                <p class="card-body2">
+                    325 places
+                </p> 
+                <div class="rectangle-div6"></div>   
+        </div>
+    </div>
+    </div>
+    <div class="card">
+        <img src="1.png" 
+        alt="books">
+        <div class="card-content">
+            <h2 class="card-title">CVK Park Bosphorus Hotel Istanbul</h2>
+            <p class="card-body"><img src="Location.svg" alt="icons" style="width: 16px; height: 16px;">Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437</p>
+            <p><img src="star.svg" alt="icons" style="width:80px; height: 16px;">5 Star Hotel </p><p><img src="cafe.svg" alt="icons" style="width:16px; height: 16px;">20+ Amenities</p>
+            <button style="width: 40px;height: 32px;border-radius: 5px;border-color: solid #007F87;" type="button">4.2</button>
+            Very Good 371 Reviews
+            <hr>
+            <div class="button-row" style="text-align: left;">
+                <button class="btn-primary1" type="button"><img src="heart.svg" alt="h" style="width: 20px; height: 20px; margin-left: 5px;"></button> &nbsp &nbsp 
+                <button class="btn-secondary1" type="submit"><a href="new2.html" target="_blank">View Place</button></a>
+               </div>
+        </div>
+    </div>
+    <div class="card">
+        <img src="2.png" 
+        alt="books">
+        <div class="card-content">
+            <h2 class="card-title">CVK Park Bosphorus Hotel Istanbul</h2>
+            <p class="card-body"><img src="Location.svg" alt="icons" style="width: 16px; height: 16px;">Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437</p>
+            <p><img src="star.svg" alt="icons" style="width:80px; height: 16px;">5 Star Hotel </p><p><img src="cafe.svg" alt="icons" style="width:16px; height: 16px;">20+ Amenities</p>
+            <button style="width: 40px;height: 32px;border-radius: 5px;border-color: solid #007F87;" type="button">4.2</button>
+            Very Good 371 Reviews
+            <hr>
+            <div class="button-row" style="text-align: left;">
+                <button class="btn-primary1" type="button"><img src="heart.svg" alt="h" style="width: 20px; height: 20px; margin-left: 5px;"></button> &nbsp &nbsp 
+                <button class="btn-secondary1" type="submit"><a href="new2.html" target="_blank">View Place</button></a>
+               </div>
+        </div>
+    </div>
+    <div class="card">
+        <img src="3.png" 
+        alt="books">
+        <div class="card-content">
+            <h2 class="card-title">CVK Park Bosphorus Hotel Istanbul</h2>
+            <p class="card-body"><img src="Location.svg" alt="icons" style="width: 16px; height: 16px;">Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437</p>
+            <p><img src="star.svg" alt="icons" style="width:80px; height: 16px;">5 Star Hotel </p><p><img src="cafe.svg" alt="icons" style="width:16px; height: 16px;">20+ Amenities</p>
+            <button style="width: 40px;height: 32px;border-radius: 5px;border-color: solid #007F87;" type="button">4.2</button>
+            Very Good 371 Reviews
+            <hr>
+            <div class="button-row" style="text-align: left;">
+                <button class="btn-primary1" type="button"><img src="heart.svg" alt="h" style="width: 20px; height: 20px; margin-left: 5px;"></button> &nbsp &nbsp 
+                <button class="btn-secondary1" type="submit"><a href="new2.html" target="_blank">View Place</button></a>
+               </div>
+        </div>
+    </div>
+    <div class="card">
+        <img src="4.png" 
+        alt="books">
+        <div class="card-content">
+            <h2 class="card-title">CVK Park Bosphorus Hotel Istanbul</h2>
+            <p class="card-body"><img src="Location.svg" alt="icons" style="width: 16px; height: 16px;">Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437</p>
+            <p><img src="star.svg" alt="icons" style="width:80px; height: 16px;">5 Star Hotel </p><p><img src="cafe.svg" alt="icons" style="width:16px; height: 16px;">20+ Amenities</p>
+            <button style="width: 40px;height: 32px;border-radius: 5px;border-color: solid #007F87;" type="button">4.2</button>
+            Very Good 371 Reviews
+            <hr>
+            <div class="button-row" style="text-align: left;">
+                <button class="btn-primary1" type="button"><img src="heart.svg" alt="h" style="width: 20px; height: 20px; margin-left: 5px;"></button> &nbsp &nbsp 
+                <button class="btn-secondary1" type="submit"><a href="new2.html" target="_blank">View Place</button></a>
+               </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<div class="footer">
+    <div class="footer-left">
+        <div class="logo2">
+            <div class="logo-text-wrapper">
+              <img src="logo7.png" alt="Logo">
+              <h3 class="logo-text1">Planning your next trip?</h3>
+              <p class="logo-text">Subscribe to our newsletter. Get the latest travel trends & deals!</p> <!-- Add the text below the logo -->
+            </div>
+        </div>
+            <div class="footer-text">
+                <input type="text" placeholder="Enter E-Mail ID">
+                <img src="v.svg" alt="Image">
+            </div>
+    </div>
+    </div>
+<div class="bottom-nav">
+    <a href="#">About US</a>
+    <a href="#">Mobile</a>
+    <a href="#">Privacy</a>
+    <a href="#">Terms Of Use</a>
+    <a href="#">Career</a>
+    <a href="#">Customer Service</a>
+    <div class="bottom-navimg">
+    <a href="#"><img src="f.svg" alt="Icon 1" width="30px" height="30px"></a>
+    <a href="#"><img src="i.svg" alt="Icon 1" width="30px" height="30px"></a>
+    <a href="#"><img src="t.svg" alt="Icon 1" width="30px" height="30px"></a>
+    </div>
+</div>
+</body>
+</html>

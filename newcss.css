@@ -1,0 +1,701 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap%27");
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("background-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.top-nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* Add padding for spacing around the navigation bar */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.rectangle-div {
+    position: absolute;
+    margin: 0;
+    top: 59px;
+    left: 14px;
+    background-color: #007f87;
+    width: 103px;
+    height: 5px;
+}
+
+.rectangle-div2 {
+    position: absolute;
+    margin: 0 !important;
+    top: 59px;
+    left: 126px;
+    background-color: #007f87;
+    width: 103px;
+    height: 5px;
+}
+
+.rectangle-div3 {
+    position: absolute;
+    margin: 0 !important;
+    top: 59px;
+    left: 1280px;
+    background-color: #007f87;
+    width: 103px;
+    height: 5px;
+}
+
+.rectangle-div,
+.rectangle-div2,
+.rectangle-div3 {
+    position: absolute;
+    height: 3px;
+    background-color: #007F87;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.left-nav li:hover .rectangle-div,
+.left-nav li:hover .rectangle-div2,
+.right-nav li:hover .rectangle-div3 {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+
+.left-nav li:hover .rectangle-div,
+.left-nav li:hover .rectangle-div2,
+.right-nav li:hover .rectangle-div3 {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+/* Add cursor pointer for li elements */
+.left-nav li,
+.right-nav li {
+    cursor: pointer;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px; /* Add padding for spacing around the icons */
+}
+
+.logo img {
+    width:110px;
+    height:50px;
+    border-radius: 0px;
+    display: block;
+    margin: 0 auto; /* Center the logo horizontally */
+    opacity: 0.8;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card {
+    width: 100%;
+    height: 537px;
+    background-image: url("bg5.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.overlapping-card {
+    width: 1232px;
+    height: 256px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust the alpha value for card background transparency */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center the card content horizontally and vertically */
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position:absolute ; /* Position the card absolutely relative to the container */
+    top: 85%; /* Adjust the top position to overlap the first card */
+    left: 50%;
+    transform: translateX(-50%); /* Adjust the left position to overlap the first card */
+    z-index: 2; /* Set the z-index to bring it above the first card */
+}
+
+.card-title {
+    text-align: left;
+    float: left;
+    font-size: 24px;
+    margin-bottom:10px ;
+    color: #fff;
+}
+
+.card-title4 {
+    text-align: left;
+    float: left;
+    font-size: 45px;
+    margin-bottom:10px ;
+    color: #fff;
+    padding-left: 130px;
+}
+
+.card-content {
+    text-align: left;
+    float: left;
+     font-size: 16px;
+     color: #fff;
+ }
+
+ .card-content4 {
+    text-align: left;
+    float: left;
+     font-size: 20px;
+     color: #fff;
+     padding-left: 130px;
+ }
+
+
+.custom-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    display: grid;
+    align-items: center;
+    margin: 5px;
+}
+
+.form-group label {
+    color: #5b5b5b;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.form-group input[type="text"]
+{
+    color: #5b5b5b;
+    width:400px;
+    height: 56px;
+    border:none;
+    font-size: 20px;
+}
+.form-group select,
+.form-group input[type="date"] 
+{
+    color: #5b5b5b;
+    width: 220px;
+    height: 58px;
+    border:none;
+    font-size: 20px;
+
+}
+
+.form-group input[type="dropdown"] 
+{
+    width: 220px;
+    height: 64px;
+    border: 2px solid rgb(170, 170, 170);
+    border-radius: 4px;
+    font-size: 20px;
+
+}
+
+.form-group fieldset{
+    border-radius: 10px;
+}
+
+.button-row {
+    display: flex;
+    justify-content: flex;
+    margin-top: 15px;
+}
+
+.btn-primary{
+    border:none;
+    background-color:rgb(223, 223, 223);
+    padding:15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin:4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #005F67;
+    border-color: #007F87;
+    color: white; /* Change text color on hover */
+}
+
+.btn-secondary{
+    border:none;
+    background-color:#007F87;
+    padding:15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin:4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.btn-secondary:hover {
+    background-color: #005F67;
+    border-color: #007F87;
+    color: white; /* Change text color on hover */
+}
+
+.custom-form button {
+    margin: 5px;
+}
+
+.lets-try-this{
+    display: flex;
+}
+.text-below-card {
+    top:90%;
+    text-align: left;
+    margin-top: 29px;
+    font-size: 32px;
+    padding-left: 130px;
+}
+
+.card-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    gap: 20px;
+}
+
+.card2 {
+    width: 238px;
+    height: 90px;
+    border: none;
+    border-radius: 8px;
+    padding: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center the items vertically */
+    transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+.card-row a{
+    color: black;
+}
+
+
+.card2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.card-image1 {
+    width: 90px;
+    height: 90px;
+    border-radius: 8px; /* To make the image circular */
+    object-fit: cover; /* Maintain the aspect ratio of the image */
+    margin-right: 16px ;/* Add some spacing between the image and content */
+    margin-top: 0px;
+}
+
+.card-content2 {
+    flex: 1; /* Allow the content to expand and fill the available space */
+}
+
+.card-title2 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.card-body2 {
+    font-size: 12px;
+}
+
+.text-below-card1 {
+    top:90%;
+    text-align: left;
+    margin-top: 90px;
+    font-size: 32px;
+    padding-left: 130px;
+}
+
+.card-row1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card3 {
+    width: 296px;
+    height: 420px;
+    border: none;
+    border-radius: 8px;
+    padding: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex; /* Use flexbox for layout */
+    background-image: url("a.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 90%;
+}
+
+.card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+.card4 {
+    width: 296px;
+    height: 420px;
+    border: none;
+    border-radius: 8px;
+    padding: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex; /* Use flexbox for layout */
+    background-image: url("b.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 90%;
+}
+
+.card5 {
+    width: 296px;
+    height: 420px;
+    border: none;
+    border-radius: 8px;
+    padding: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex; /* Use flexbox for layout */
+    background-image: url("c.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 90%;
+}
+
+.card6 {
+    width: 296px;
+    height: 420px;
+    border: none;
+    border-radius: 8px;
+    padding: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex; /* Use flexbox for layout */
+    background-image: url("d.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 90%;
+}
+
+
+.card-image2 {
+    width: 296px;
+    height: 420px;
+    border-radius: 8px; /* To make the image circular */
+    
+}
+
+.card-content3 {
+    flex: 1; /* Allow the content to expand and fill the available space */
+}
+
+.card-title3 {
+    font-size: 24px;
+    margin-top: 280px;
+    margin-left: 25px;
+    color: white;
+}
+
+.card-body3 {
+    font-size: 16px;
+    margin-top: 2px;
+    margin-left: 25px;
+    color: white;
+}
+
+.card-body4 {
+    font-size: 24px;
+    margin-top: -41px;
+    margin-right: 25px;
+    color: white;
+    float: right;
+}
+
+.btn-primary1{
+    border:none;
+    background-color:#007F87;
+    padding:15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 248px;
+    height: 48px;
+    margin-top: -50px;
+    margin-left: 25px;
+    color: #fff;
+}  
+
+.btn-primary1:hover {
+    background-color: #005F67;
+    border-color: #007F87;
+    color: white; /* Change text color on hover */
+}
+
+.text-below-card2 {
+    top:80%;
+    text-align: left;
+    margin-top: 90px;
+    font-size: 32px;
+    padding-left: 130px;
+}
+
+.large-card {
+    float: left;
+    width: 552px;
+    height: 424px;
+    background-color: rgb(0, 127, 135);
+    border:none;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 130px; /* Add spacing between large card and image grid */
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -18px; /* Add spacing between large card and image grid */
+}
+
+.image {
+    width: 316px; /* Half the width of the container minus the spacing */
+    height: 200px;
+    border: 2px solid rgb(0, 127, 135);
+    border-radius: 12px;
+    padding: 0px;
+    margin: 19px; /* Add spacing between images */
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.smallcard{
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width:68px;
+    height:63px;
+    float:right;
+    margin-top: -271px;
+    border: 2px white;
+    border-radius: 10px;
+
+}
+
+.cardcontent{
+    text-align: left;
+    float: left;
+    color: white;
+    padding-left: 20px;
+    font-size: 40px;
+}
+
+.cardtitle{
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.cardbody{
+    font-size: 16px;
+    color:white;
+    margin-top: 40px;
+}
+
+
+.btn-primary2{
+    border:none;
+    background-color:#fff;
+    padding:15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 504px;
+    height: 48px;
+    margin-top: 34px;
+    margin-left: 25px;
+    color: #000;
+} 
+
+.btn-primary2:hover {
+    background-color: #55696a;
+    border-color: #007F87;
+    color: white; /* Change text color on hover */
+}
+
+/* styles.css */
+
+.footer {
+    width: 1480px;
+    height: 300px;
+    background-color: rgb(0, 127, 135);
+    /* Optional: Add additional styling for the footer */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo-text1 {
+    margin-top: 63px; /* Add spacing between the logo and the text below */
+    color: #fff; /* Set the text color */
+    font-size: 32px; /* Set the font size */
+    margin-left: 50px;
+}
+.logo-text {
+    margin-top: -16px; /* Add spacing between the logo and the text below */
+    color: #fff; /* Set the text color */
+    font-size: 14px; /* Set the font size */
+    text-decoration: underline;
+    margin-left: 50px;
+}
+
+.footer-text {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-left: 456px;
+    margin-top: -81px;
+    color: white;
+
+}
+
+.footer-text input {
+    color: rgb(255, 255, 255);
+    margin-right: 10px;
+    padding: 5px;
+    width: 813px;
+    height: 52px;
+    background-color: rgb(0, 127, 135);
+    border-bottom: 3px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+}
+.footer-text input::placeholder{
+    color: #fff;
+    font-size: 16px;
+}
+
+.footer-text img{
+    width: 20px;
+    height: 20px;
+    margin-left: -50px;
+}
+.footer-right {
+    text-align: right;
+    color: #fff; /* Optional: Set the text color */
+}
+
+.footer-right h3 {
+    margin: 0;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.footer-right p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+
+.logo2 img{
+    width: 178.07px;
+    height: 80.97999999999999px;
+    float: left;
+    margin-left: 20px;
+    margin-top: -136px;
+}
+
+.bottom-nav {
+    background-color: rgb(0, 127, 135);; /* Set the background color for the bottom nav */
+    display: flex;
+    justify-content: space-between; /* Align the items to the left */
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    bottom: -1742px;
+    left: 16px;
+}
+
+.bottom-nav a {
+    color: #fff; /* Set the text color for the links */
+    text-decoration: none; /* Remove the default underline on links */
+    padding: 10px 20px; /* Add padding to the links for better spacing */
+}
+
+.bottom-nav a:hover {
+    background-color: white; 
+    color: #007F87;/* Change the background color on hover */
+}
+
+.bottom-navimg{
+    margin-left: 500px;
+}
